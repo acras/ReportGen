@@ -8,24 +8,28 @@
   resources were bound to the produced executable.
 */
 
-#define MidConst_SNoInsertsAllowed 65424
-#define MidConst_SCannotChangeCommandText 65425
-#define MidConst_STooManyRecordsModified 65440
-#define MidConst_SInvalidOptParamType 65441
-#define MidConst_SMissingDataSet 65442
-#define MidConst_SConstraintFailed 65443
-#define MidConst_SField 65444
-#define MidConst_SReadOnlyProvider 65445
-#define MidConst_SNoKeySpecified 65446
-#define MidConst_SFieldNameTooLong 65447
-#define MidConst_SNoDataSets 65448
-#define MidConst_SRecConstFail 65449
-#define MidConst_SFieldConstFail 65450
-#define MidConst_SDefExprFail 65451
-#define MidConst_SArrayElementError 65452
-#define MidConst_SNoTableName 65453
-#define MidConst_SNoEditsAllowed 65454
-#define MidConst_SNoDeletesAllowed 65455
+#define MidConst_SNoEditsAllowed 65424
+#define MidConst_SNoDeletesAllowed 65425
+#define MidConst_SNoInsertsAllowed 65426
+#define MidConst_SCannotChangeCommandText 65427
+#define MidConst_SConnectionMissing 65428
+#define MidConst_SNoCircularConnection 65429
+#define MidConst_SNoParentConnection 65440
+#define MidConst_SInvalidResponse 65441
+#define MidConst_STooManyRecordsModified 65442
+#define MidConst_SInvalidOptParamType 65443
+#define MidConst_SMissingDataSet 65444
+#define MidConst_SConstraintFailed 65445
+#define MidConst_SField 65446
+#define MidConst_SReadOnlyProvider 65447
+#define MidConst_SNoKeySpecified 65448
+#define MidConst_SFieldNameTooLong 65449
+#define MidConst_SNoDataSets 65450
+#define MidConst_SRecConstFail 65451
+#define MidConst_SFieldConstFail 65452
+#define MidConst_SDefExprFail 65453
+#define MidConst_SArrayElementError 65454
+#define MidConst_SNoTableName 65455
 #define SqlConst_SINVALIDREF 65456
 #define SqlConst_SNOTABLE 65457
 #define SqlConst_SNODATA 65458
@@ -41,7 +45,7 @@
 #define MidConst_SRefreshError 65468
 #define MidConst_SNoCircularReference 65469
 #define MidConst_SErrorLoadingMidas 65470
-#define MidConst_SInvalidResponse 65471
+#define MidConst_SNoConnectToBroker 65471
 #define SqlConst_SOUTOFRANGE 65472
 #define SqlConst_SINVALIDPARAM 65473
 #define SqlConst_SEOF 65474
@@ -108,8 +112,14 @@
 #define SqlConst_SLoginError 65535
 STRINGTABLE
 BEGIN
+	MidConst_SNoEditsAllowed,	"Modifications are not allowed"
+	MidConst_SNoDeletesAllowed,	"Deletes are not allowed"
 	MidConst_SNoInsertsAllowed,	"Inserts are not allowed"
 	MidConst_SCannotChangeCommandText,	"CommandText changes are not allowed"
+	MidConst_SConnectionMissing,	"Requires Connection before opening"
+	MidConst_SNoCircularConnection,	"Circular reference to Connection not allowed"
+	MidConst_SNoParentConnection,	"ParentConnection is not assigned"
+	MidConst_SInvalidResponse,	"Invalid response"
 	MidConst_STooManyRecordsModified,	"Update affected more than 1 record."
 	MidConst_SInvalidOptParamType,	"Value cannot be stored in an optional parameter"
 	MidConst_SMissingDataSet,	"Missing DataSet property"
@@ -124,8 +134,6 @@ BEGIN
 	MidConst_SDefExprFail,	"Preparation of default expression failed with error \"%s\""
 	MidConst_SArrayElementError,	"Array elements of type %s are not supported"
 	MidConst_SNoTableName,	"Unable to resolve records.  Table name not found."
-	MidConst_SNoEditsAllowed,	"Modifications are not allowed"
-	MidConst_SNoDeletesAllowed,	"Deletes are not allowed"
 	SqlConst_SINVALIDREF,	"[0x0018]: Invalid REF"
 	SqlConst_SNOTABLE,	"[0x0019]: No table found"
 	SqlConst_SNODATA,	"[0x0064]: No more data"
@@ -141,7 +149,7 @@ BEGIN
 	MidConst_SRefreshError,	"Must apply updates before refreshing data"
 	MidConst_SNoCircularReference,	"Circular provider references not allowed"
 	MidConst_SErrorLoadingMidas,	"Error loading MIDAS.DLL"
-	MidConst_SInvalidResponse,	"Invalid response"
+	MidConst_SNoConnectToBroker,	"Connection not allowed to TConnectionBroker"
 	SqlConst_SOUTOFRANGE,	"[0x0008]: Parameter/Column out of Range"
 	SqlConst_SINVALIDPARAM,	"[0x0009]: Invalid Parameter"
 	SqlConst_SEOF,	"[0x000A]: Result set at EOF"

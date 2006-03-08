@@ -90,7 +90,7 @@ MaxStackSize=1048576
 ImageBase=4194304
 ExeDescription=
 [Directories]
-OutputDir=C:\Documents and Settings\user\My Documents\projetos\clientes\LabMaster\bin
+OutputDir=C:\Documents and Settings\user\My Documents\projetos\clientes\ABMH\bin
 UnitOutputDir=
 PackageDLLOutputDir=
 PackageDCPOutputDir=
@@ -135,6 +135,11 @@ ProductName=
 ProductVersion=1.0.0.0
 Comments=
 [Excluded Packages]
+C:\PROGRA~1\Borland\Delphi7\Projects\Bpl\JclDebugIdeD70.bpl=JCL Debug IDE extension for Delphi 7
+C:\PROGRA~1\Borland\Delphi7\Projects\Bpl\ProjectAnalyzerD70.bpl=JCL Project Analyzer for Delphi 7
+C:\PROGRA~1\Borland\Delphi7\Projects\Bpl\IdeOpenDlgFavoriteD70.bpl=JCL Open and Save IDE dialogs with favorite folders for Delphi 7
+c:\program files\borland\delphi7\RBuilder\Lib\dclDAD97.bpl=ReportBuilder Data Access Environment
+c:\program files\borland\delphi7\RBuilder\Lib\dclRBU97.bpl=ReportBuilder Sample Components
 C:\WINDOWS\system32\rbIBE97.bpl=ReportBuilder Data Access for Interbase Express
 [HistoryLists\hlUnitAliases]
 Count=1
@@ -143,6 +148,7 @@ Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
 Count=1
 Item0=..\Temp
 [HistoryLists\hlOutputDirectorry]
-Count=2
-Item0=C:\Documents and Settings\user\My Documents\projetos\clientes\LabMaster\bin
-Item1=C:\Projetos\Clientes\LabMaster\bin
+Count=3
+Item0=C:\Documents and Settings\user\My Documents\projetos\clientes\ABMH\bin
+Item1=C:\Documents and Settings\user\My Documents\projetos\clientes\LabMaster\bin
+Item2=C:\Projetos\Clientes\LabMaster\bin
