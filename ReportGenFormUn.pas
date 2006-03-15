@@ -87,7 +87,7 @@ uses
   DB, DBTables,  ppComm, ppCache, ppClass, ppProd, ppReport, ppRptExp, ppBands,
   ppDBBDE, ppEndUsr, ppDBPipe, ppDB, ppPrnabl, ppStrtch, ppDsgnDB,
   ppRelatv, ppModule, ppViewr, ppForms, ppFormWrapper, DBXpress, SqlExpr,
-  DBClient, SimpleDS, daDataModule, daDBExpress;
+  DBClient, SimpleDS, daDataModule, daDBExpress, ppRichTx;
 
 type
 
@@ -163,6 +163,7 @@ type
     Shape29: TShape;
     Shape32: TShape;
     Shape33: TShape;
+    ppRichText1: TppRichText;
     procedure FormCreate(Sender: TObject);
     procedure btnLaunchClick(Sender: TObject);
     procedure ReportPreviewFormCreate(Sender: TObject);
