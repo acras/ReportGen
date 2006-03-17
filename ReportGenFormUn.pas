@@ -87,7 +87,7 @@ uses
   DB, DBTables,  ppComm, ppCache, ppClass, ppProd, ppReport, ppRptExp, ppBands,
   ppDBBDE, ppEndUsr, ppDBPipe, ppDB, ppPrnabl, ppStrtch, ppDsgnDB,
   ppRelatv, ppModule, ppViewr, ppForms, ppFormWrapper, DBXpress, SqlExpr,
-  DBClient, SimpleDS, daDataModule, daDBExpress, ppRichTx;
+  DBClient, SimpleDS, daDataModule, daDBExpress, ppRichTx, ppWWRichEd;
 
 type
 
